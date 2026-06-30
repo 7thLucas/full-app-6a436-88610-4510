@@ -1,7 +1,7 @@
-# MeetMind — Product Overview
+# autoMoM — Product Overview
 
 ## Product Identity
-- **Name**: MeetMind *(working title — confirmed during onboarding)*
+- **Name**: autoMoM
 - **Tagline**: Turn every meeting into clear decisions and trackable action — automatically.
 - **Category**: AI Productivity / Team Collaboration Tool
 - **Positioning**: The only meeting tool that captures, organizes, and follows up on everything — with zero manual effort.
