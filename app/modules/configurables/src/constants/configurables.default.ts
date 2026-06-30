@@ -64,67 +64,72 @@ export type TDefaultConfigurableData = {
   logoUrl: string;
   brandColor: TBrandColor;
   font: TFont;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  appTagline: string;
+  appDescription: string;
+  maxActionItemsPerMeeting: number;
+  defaultProjectName: string;
+  enableEmailReminders: boolean;
+  actionItemReminderDays: number;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "My App",
+  appName: "autoMoM",
   logoUrl: "",
   brandColor: {
     // Base
-    background:        "#ffffff",
-    foreground:        "#09090b",
+    background:        "#0f172a",
+    foreground:        "#e2e8f0",
     // Card
-    card:              "#ffffff",
-    cardForeground:    "#09090b",
+    card:              "#1e293b",
+    cardForeground:    "#e2e8f0",
     // Popover
-    popover:           "#ffffff",
-    popoverForeground: "#09090b",
+    popover:           "#1e293b",
+    popoverForeground: "#e2e8f0",
     // Primary
-    primary:           "#2563eb",
+    primary:           "#0d9488",
     primaryForeground: "#ffffff",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#334155",
+    secondaryForeground: "#e2e8f0",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#71717a",
+    muted:           "#1e293b",
+    mutedForeground: "#94a3b8",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#06b6d4",
+    accentForeground: "#ffffff",
     // Destructive
     destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructiveForeground: "#ffffff",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#2563eb",
+    border: "#334155",
+    input:  "#334155",
+    ring:   "#0d9488",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#0d9488",
+    chart2: "#06b6d4",
+    chart3: "#3b82f6",
+    chart4: "#8b5cf6",
+    chart5: "#f59e0b",
     // Navbar
-    navbarBackground: "#ffffff",
+    navbarBackground: "#0f172a",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
+    sidebarBackground:        "#0a1120",
+    sidebarForeground:        "#cbd5e1",
+    sidebarPrimary:           "#0d9488",
     sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarAccent:            "#1e293b",
+    sidebarAccentForeground:  "#e2e8f0",
+    sidebarBorder:            "#1e293b",
+    sidebarRing:              "#0d9488",
   },
   font: {
-    headingFont: "Plus Jakarta Sans",
+    headingFont: "Space Grotesk",
     textFont: "Inter",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // ─────────────────────────────────────────────────────────────────────
+  appTagline: "Never Lose a Decision Again",
+  appDescription: "AI-powered meeting assistant that auto-generates transcripts, action items, and decisions from your recordings.",
+  maxActionItemsPerMeeting: 50,
+  defaultProjectName: "General",
+  enableEmailReminders: true,
+  actionItemReminderDays: 2,
 };

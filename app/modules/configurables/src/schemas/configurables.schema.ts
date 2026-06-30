@@ -171,5 +171,12 @@ export const configurableSchemas: ConfigurableSchemas = {
         },
       ],
     },
+
+    { fieldName: "appTagline",    type: "string",  required: false, label: "App Tagline",    maxLength: 120 },
+    { fieldName: "appDescription", type: "string", required: false, label: "App Description", maxLength: 300 },
+    { fieldName: "maxActionItemsPerMeeting", type: "number", required: false, label: "Max Action Items Per Meeting", min: 1, max: 200 },
+    { fieldName: "defaultProjectName",       type: "string", required: false, label: "Default Project Name", maxLength: 60 },
+    { fieldName: "enableEmailReminders",     type: "boolean", required: false, label: "Enable Email Reminders" },
+    { fieldName: "actionItemReminderDays",   type: "number",  required: false, label: "Reminder Days Before Due", min: 1, max: 30 },
   ],
 };
