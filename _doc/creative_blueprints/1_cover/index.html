@@ -1,0 +1,71 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-visual { width: 45%; }
+  .mode-portrait .sl-visual { width: 100%; height: 40%; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-portrait .sl-content { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12" style="background-color: {{config.brandColor.background}};">
+      <!-- Logo / wordmark -->
+      <div class="flex items-center gap-3">
+        <img src="{{config.logoUrl}}" alt="{{config.appName}} logo" style="height:36px; width:36px; border-radius:8px;" onerror="this.style.display='none'" />
+        <span style="font-family: {{config.font.headingFont}}, sans-serif; font-size:1.1rem; font-weight:700; color:{{config.brandColor.primary}}; letter-spacing:-0.01em;">{{config.appName}}</span>
+      </div>
+
+      <!-- Main headline -->
+      <div class="flex flex-col gap-6">
+        <div>
+          <div style="display:inline-block; padding:4px 12px; border-radius:999px; background-color:{{config.brandColor.primary}}; color:{{config.brandColor.primaryForeground}}; font-family:{{config.font.textFont}},sans-serif; font-size:0.7rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:16px;">AI Meeting Intelligence</div>
+          <h1 style="font-family: {{config.font.headingFont}}, sans-serif; font-size:3rem; font-weight:800; line-height:1.1; color:{{config.brandColor.foreground}}; letter-spacing:-0.03em;">
+            Never forget<br/>
+            <span style="color:{{config.brandColor.primary}};">a decision</span><br/>
+            again.
+          </h1>
+        </div>
+        <p style="font-family: {{config.font.textFont}}, sans-serif; font-size:1.05rem; line-height:1.65; color:{{config.brandColor.mutedForeground}}; max-width:400px;">
+          {{config.tagline}}
+        </p>
+
+        <!-- Key stats row -->
+        <div class="flex gap-6">
+          <div>
+            <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.6rem; font-weight:800; color:{{config.brandColor.primary}};">0</div>
+            <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; color:{{config.brandColor.mutedForeground}}; font-weight:500;">Manual notes</div>
+          </div>
+          <div style="width:1px; background-color:{{config.brandColor.border}};"></div>
+          <div>
+            <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.6rem; font-weight:800; color:{{config.brandColor.secondary}};">100%</div>
+            <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; color:{{config.brandColor.mutedForeground}}; font-weight:500;">Decisions captured</div>
+          </div>
+          <div style="width:1px; background-color:{{config.brandColor.border}};"></div>
+          <div>
+            <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.6rem; font-weight:800; color:{{config.brandColor.accent}};">Auto</div>
+            <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; color:{{config.brandColor.mutedForeground}}; font-weight:500;">Follow-ups</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <data-attribution />
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual flex items-center justify-center relative" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, {{config.brandColor.secondary}} 100%); overflow:hidden;">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=A%20clean%20minimal%20UI%20mockup%20showing%20an%20AI%20meeting%20assistant%20dashboard%20with%20a%20transcript%20panel%2C%20action%20items%20list%2C%20and%20decision%20cards%20on%20a%20dark%20navy%20background%2C%20modern%20SaaS%20design"
+        alt="MeetMind dashboard preview"
+        style="width:90%; border-radius:16px; box-shadow: 0 32px 64px rgba(0,0,0,0.35); position:relative; z-index:1;"
+      />
+      <!-- decorative circles -->
+      <div style="position:absolute; top:-80px; right:-80px; width:280px; height:280px; border-radius:50%; background:rgba(255,255,255,0.06); z-index:0;"></div>
+      <div style="position:absolute; bottom:-60px; left:-60px; width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,0.04); z-index:0;"></div>
+    </div>
+
+  </div>
+</section>
