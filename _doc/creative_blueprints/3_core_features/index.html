@@ -1,0 +1,68 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+      <div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}}; margin-bottom:6px;">What it does</div>
+        <h2 style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.9rem; font-weight:800; color:{{config.brandColor.foreground}}; letter-spacing:-0.02em; line-height:1.1;">Core Features</h2>
+      </div>
+      <!-- Persona chips -->
+      <div class="flex gap-2">
+        <div style="padding:6px 14px; border-radius:999px; background-color:{{config.brandColor.primary}}; color:{{config.brandColor.primaryForeground}}; font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; font-weight:600;">Team Leads</div>
+        <div style="padding:6px 14px; border-radius:999px; background-color:{{config.brandColor.muted}}; color:{{config.brandColor.mutedForeground}}; font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; font-weight:600;">Contributors</div>
+        <div style="padding:6px 14px; border-radius:999px; background-color:{{config.brandColor.muted}}; color:{{config.brandColor.mutedForeground}}; font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; font-weight:600;">Executives</div>
+      </div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.primary}}; border:1px solid {{config.brandColor.primary}};">
+        <div style="font-size:1.4rem;">🎙️</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.primaryForeground}};">Meeting Ingestion</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:rgba(255,255,255,0.8); line-height:1.55;">Upload audio/video recordings or connect Zoom, Google Meet, and Teams directly.</div>
+      </div>
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-size:1.4rem;">📄</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.foreground}};">AI Transcription</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.55;">Speaker-aware transcripts generated automatically — accurate, searchable, and timestamped.</div>
+      </div>
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-size:1.4rem;">✨</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.foreground}};">Smart Summaries</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.55;">Concise AI summaries of key points — without wading through an hour of transcript.</div>
+      </div>
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.secondary}}; border:1px solid {{config.brandColor.secondary}};">
+        <div style="font-size:1.4rem;">✅</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.secondaryForeground}};">Action Item Extraction</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:rgba(255,255,255,0.85); line-height:1.55;">AI identifies tasks, assigns owners, and sets deadlines — straight from the conversation.</div>
+      </div>
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-size:1.4rem;">🏛️</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.foreground}};">Decision Tracking</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.55;">Every decision logged, tagged to its project, and never buried in meeting notes again.</div>
+      </div>
+
+      <div class="p-5 rounded-2xl flex flex-col gap-3" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-size:1.4rem;">🔔</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.95rem; font-weight:700; color:{{config.brandColor.foreground}};">Reminders & Follow-ups</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.55;">Automated in-app and email reminders surface pending tasks before they're forgotten.</div>
+      </div>
+
+    </div>
+
+    <!-- Footer note -->
+    <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; color:{{config.brandColor.mutedForeground}}; text-align:right;">{{config.appName}} · Organized by project · Team-shared</div>
+
+  </div>
+</section>
