@@ -1,0 +1,87 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2.5rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-8">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+      <span style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}};">The Problem & Solution</span>
+      <span style="font-family:{{config.font.textFont}},sans-serif; font-size:0.7rem; color:{{config.brandColor.mutedForeground}};">{{config.appName}}</span>
+    </div>
+
+    <!-- Two-column split -->
+    <div class="sl-layout flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col gap-5">
+        <div>
+          <div style="display:inline-block; padding:4px 12px; border-radius:999px; background-color:#fee2e2; color:#991b1b; font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:12px;">The Problem</div>
+          <h2 style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.9rem; font-weight:800; color:{{config.brandColor.foreground}}; line-height:1.2; letter-spacing:-0.02em;">Meetings end.<br/>Clarity doesn't follow.</h2>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:#fff5f5; border:1px solid #fecaca;">
+            <span style="font-size:1.1rem;">📝</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:#991b1b; margin-bottom:2px;">Manual notes are unreliable</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Inconsistent, incomplete, and shaped by whoever is typing — not what was actually said.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:#fff5f5; border:1px solid #fecaca;">
+            <span style="font-size:1.1rem;">🔇</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:#991b1b; margin-bottom:2px;">Decisions get buried or forgotten</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Key agreements disappear into email threads and dense docs nobody reads again.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:#fff5f5; border:1px solid #fecaca;">
+            <span style="font-size:1.1rem;">⏰</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:#991b1b; margin-bottom:2px;">Action items fall through the cracks</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Tasks assigned verbally vanish. Teams re-discuss resolved items. Momentum dies.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div style="width:1px; background:{{config.brandColor.border}}; flex-shrink:0;"></div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col gap-5">
+        <div>
+          <div style="display:inline-block; padding:4px 12px; border-radius:999px; background-color:{{config.brandColor.primary}}; color:{{config.brandColor.primaryForeground}}; font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:12px;">The Solution</div>
+          <h2 style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.9rem; font-weight:800; color:{{config.brandColor.foreground}}; line-height:1.2; letter-spacing:-0.02em;">{{config.appName}} captures<br/>everything. Automatically.</h2>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+            <span style="font-size:1.1rem;">🎙️</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:{{config.brandColor.primary}}; margin-bottom:2px;">Upload or connect your meeting</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Drop in a recording or link your online meeting. {{config.appName}} takes it from there.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+            <span style="font-size:1.1rem;">🤖</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:{{config.brandColor.primary}}; margin-bottom:2px;">AI extracts what matters</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Transcript, summary, decisions, action items — structured and searchable, instantly.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+            <span style="font-size:1.1rem;">✅</span>
+            <div>
+              <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:0.85rem; font-weight:700; color:{{config.brandColor.primary}}; margin-bottom:2px;">Team stays accountable</div>
+              <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Tasks assigned to owners, tracked by project, with automatic reminders until done.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
