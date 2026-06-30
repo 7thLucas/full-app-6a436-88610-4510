@@ -1,0 +1,52 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-7">
+
+    <!-- Header -->
+    <div>
+      <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}}; margin-bottom:6px;">Measurable outcomes</div>
+      <h2 style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.9rem; font-weight:800; color:{{config.brandColor.foreground}}; letter-spacing:-0.02em;">What teams gain with {{config.appName}}</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics grid gap-4">
+      <div class="p-5 rounded-2xl flex flex-col gap-2" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}};">Time saved</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:2.2rem; font-weight:800; color:{{config.brandColor.primary}}; line-height:1;">~30 min</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Saved per meeting on manual note-taking and post-meeting cleanup</div>
+      </div>
+      <div class="p-5 rounded-2xl flex flex-col gap-2" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}};">Decisions captured</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:2.2rem; font-weight:800; color:{{config.brandColor.secondary}}; line-height:1;">100%</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Every decision logged automatically — no gaps, no ambiguity</div>
+      </div>
+      <div class="p-5 rounded-2xl flex flex-col gap-2" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}};">Follow-through</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:2.2rem; font-weight:800; color:{{config.brandColor.accent}}; line-height:1;">↑ 3×</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Higher action item completion when reminders and tracking are automated</div>
+      </div>
+      <div class="p-5 rounded-2xl flex flex-col gap-2" style="background-color:{{config.brandColor.muted}}; border:1px solid {{config.brandColor.border}};">
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:{{config.brandColor.mutedForeground}};">Re-meetings cut</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:2.2rem; font-weight:800; color:{{config.brandColor.primary}}; line-height:1;">↓ 40%</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.78rem; color:{{config.brandColor.mutedForeground}}; line-height:1.5;">Fewer repeat meetings to re-discuss what was already decided</div>
+      </div>
+    </div>
+
+    <!-- ROI Summary block -->
+    <div class="flex items-center gap-8 p-7 rounded-2xl" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, {{config.brandColor.secondary}} 100%);">
+      <div style="flex:1;">
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:6px;">ROI Summary</div>
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:1.5rem; font-weight:800; color:#ffffff; line-height:1.2;">Every hour reclaimed from manual meeting admin is an hour reinvested in actual work.</div>
+      </div>
+      <div style="text-align:center; flex-shrink:0;">
+        <div style="font-family:{{config.font.headingFont}},sans-serif; font-size:2.8rem; font-weight:900; color:#ffffff; line-height:1;">0</div>
+        <div style="font-family:{{config.font.textFont}},sans-serif; font-size:0.72rem; color:rgba(255,255,255,0.75); font-weight:600;">hours wasted<br/>on manual notes</div>
+      </div>
+    </div>
+
+  </div>
+</section>
